@@ -1,0 +1,22 @@
+<div class="background-img">
+  <div class="container text-center" style="margin-top: 70px;">
+    <h1 class="text-center lead font-header">Government Jobs</h1>
+    <div class="container-fluid text-center">
+      <div class="container">
+        <!-- Here begins the job card-->
+        <div class="text-center row" >
+          <div class="col-sm-3 box" *ngFor="let job of jobs">
+            <a href="{{ job?.url}}" target="_blank">
+            <h5 class="font-body text-center job-header">{{ job?.position_title | titlecase }}</h5>
+              <p class="text-center text-bg">Employer: {{ job?.organization_name }}</p>
+              <p class="text-center">Locations: {{ job?.locations }}</p>
+              <p class="text-center text-bg">Start: {{ job?.start_date | date:"MM/dd/yy" }} to End: {{ job?.end_date | date:"MM/dd/yy" }}</p>
+              <p class="text-center">Starting At: {{  job?.minimum | currency }}</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- job card ends-->
+    </div>
+  </div>
+</div>

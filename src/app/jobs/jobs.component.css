@@ -1,0 +1,63 @@
+/* 
+----FONTS ----
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Jua|Roboto');
+
+.font-header {
+  font-family: 'Jua', sans-serif;
+  color: white;
+  font-size: 40px;
+}
+
+.font-body {
+  font-family: 'Roboto', serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  margin-top: 7px;
+}
+
+.background-img {
+  background-image: url(../../assets/images/background.jpg);
+  background-size: cover;
+  margin-top: -20px;
+}
+.job-header {
+  margin: 35px 0px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.box {
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 9px 9px 3px 3px grey;
+  height: 310px;
+  padding: 0px;
+  max-width: 245px;
+  margin: 15px;
+  background-color: #fff;
+}
+
+.view-button {
+    border-radius: 5%;
+    margin: 100px 0 0 70px;
+    height: 35px;
+    width: 75px;
+}
+.view-button:hover {
+    transform: scale(1.2);
+    transform-origin: bottom 10px;
+    transition-delay: 100ms;
+    transition-timing-function: ease-in-out;
+}
+.text-bg {
+  background-color: #AAA;
+  height: 52px;
+  padding: 13px;
+}
