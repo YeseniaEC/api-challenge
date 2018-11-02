@@ -1,11 +1,11 @@
-/* 
+/*
 ----FONTS ----
  */
 
-@import url('https://fonts.googleapis.com/css?family=Jua|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Cuprum');
 
 .font-header {
-  font-family: 'Jua', sans-serif;
+  font-family: 'Cuprum', sans-serif;
   color: white;
   font-size: 40px;
 }
@@ -19,29 +19,15 @@ a {
   color: inherit;
 }
 p {
-  margin-top: 7px;
+  margin-top: 10px;
 }
 
 .background-img {
-  background-image: url(../../assets/images/background.jpg);
+  background-image: url(../../assets/images/adam-smotkin-973902-unsplash.jpg);
   background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
   margin-top: -20px;
-}
-.job-header {
-  margin: 35px 0px;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.box {
-  border-radius: 10px;
-  box-sizing: border-box;
-  box-shadow: 9px 9px 3px 3px grey;
-  height: 310px;
-  padding: 0px;
-  max-width: 245px;
-  margin: 15px;
-  background-color: #fff;
 }
 
 .view-button {
@@ -56,8 +42,35 @@ p {
     transition-delay: 100ms;
     transition-timing-function: ease-in-out;
 }
-.text-bg {
-  background-color: #AAA;
-  height: 52px;
-  padding: 13px;
+
+.card {
+  min-height: 250px;
+  height: auto;
+  margin: 25px 5px 25px 5px;
+}
+
+.card-title {
+  font-family: 'Cuprum', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 25px;
+  color: rgb(146, 25, 16);
+}
+
+.card-text {
+  font-family: 'Roboto', sans-serif;
+  margin: 15px;
+}
+
+.btn {
+  color: black;
+  font-weight: 700;
+  box-shadow: 10px 5px 5px grey;
+  margin: 15px;
+}
+.card-body-shadow {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+span {
+  font-weight: 800;
 }
