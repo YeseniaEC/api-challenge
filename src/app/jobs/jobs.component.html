@@ -2,21 +2,24 @@
   <div class="container text-center" style="margin-top: 70px;">
     <h1 class="text-center lead font-header">Government Jobs</h1>
     <div class="container-fluid text-center">
+      <!-- Job Card Starts -->
       <div class="container">
-        <!-- Here begins the job card-->
-        <div class="text-center row" >
-          <div class="col-sm-3 box" *ngFor="let job of jobs">
-            <a href="{{ job?.url}}" target="_blank">
-            <h5 class="font-body text-center job-header">{{ job?.position_title | titlecase }}</h5>
-              <p class="text-center text-bg">Employer: {{ job?.organization_name }}</p>
-              <p class="text-center">Locations: {{ job?.locations }}</p>
-              <p class="text-center text-bg">Start: {{ job?.start_date | date:"MM/dd/yy" }} to End: {{ job?.end_date | date:"MM/dd/yy" }}</p>
-              <p class="text-center">Starting At: {{  job?.minimum | currency }}</p>
-            </a>
+        <div class="row">
+          <div class="col-md-6 col-sm-12" *ngFor="let job of jobs">
+            <div class="card text-center">
+              <div class="card-body font-body card-body-shadow">
+                <h4 class="card-title">{{ job?.position_title | titlecase }}</h4>
+                <p class="card-text"><span>Employer:</span> {{ job?.organization_name }}</p>
+                <p class="card-text"><span>Locations:</span> {{ job?.locations }}</p>
+<p class="card-text"><span>Posted on:</span> {{ job?.start_date | date:"MM/dd/yy" }}</p>
+<p class="card-text"><span>Expires on:</span> {{ job?.end_date |
+                  date:"MM/dd/yy" }}</p>
+<p class="card-text" alt="No salary information available"><span>Starting At:</span> {{ job?.minimum | currency }}</p>
+                <a href="{{ job?.url}}" target="_blank" class="btn btn-info">See Job Posting</a>
+              </div>
+            </div>
           </div>
+          <!-- job card ends-->
         </div>
       </div>
-      <!-- job card ends-->
     </div>
-  </div>
-</div>
